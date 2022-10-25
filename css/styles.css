@@ -54,7 +54,7 @@ p {
 
 .container-header {
 display: flex;
-border-bottom: 1px solid #ECECEC;
+
 
 }
 
@@ -81,7 +81,7 @@ border-bottom: 1px solid #ECECEC;
 
 .header {
     background-color: var(--brend-color); 
-     border-bottom: 1px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .nav {
@@ -203,14 +203,14 @@ margin-left: 50px;
 
 .our-advantages-list {
     display: flex;
-    gap: 30px;
+    gap: 25px; 
 }
 
-.our-advantages-list .title {
-   flex-basis: calc((100% - 90px) / 4);
+.our-advantages-list .advantages {
+flex-basis: calc((100% - 90px) / 4);
 }
 
-        .our-advantages .text {
+      .our-advantages .text {
             line-height: 1.71;
             color: #757575;
             margin: 0px;
@@ -303,7 +303,7 @@ img {
         font-size: 16px;
         line-height: 1.19;
         color: #757575;
-        padding-bottom: 30px;
+        
         text-align: center;
 }
 
@@ -312,6 +312,7 @@ img {
     padding-top: 30px;
     background: var(--brend-color);
     border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
     }
 
 /* Button */
@@ -374,7 +375,6 @@ img {
     color: var(--brend-color);
     border: none;
     background-color: var(--accent-color);
-
 }
 
 /* Footer */
@@ -412,7 +412,6 @@ img {
 
 .adress .post {
 color: var(--brend-color);
-padding-bottom: 9px;
 }
 
 .adress a:hover,
@@ -427,10 +426,15 @@ padding-bottom: 9px;
     display: inline-block;
     }
 
-.adress-list-item .post,
-.adress-list-item .mail {
-    padding-bottom: 9px;
+.adress-list-item  {
+    margin-bottom: 9px;
 }
+
+.adress-list-item:last-child {
+    margin-bottom: 0px;
+}
+
+
 
 /* ПОРТФОЛІО */
 
@@ -471,7 +475,7 @@ padding-bottom: 9px;
 .filters {
     display: flex;
     justify-content: center;
-    padding-bottom: 34px;
+    margin-bottom: 34px;
    }
 
 .filters .filters-button {
@@ -499,7 +503,6 @@ padding-bottom: 9px;
     gap: 30px;        
  }
 
- 
  .card .item {
         flex-basis: calc((100% - 60px) / 3);   
 }
@@ -507,7 +510,6 @@ padding-bottom: 9px;
  .card .item:nth-last-child(-n+3) {
     margin-right: 0px;
  }
-
 
 .item .promo {
     text-decoration: none;
