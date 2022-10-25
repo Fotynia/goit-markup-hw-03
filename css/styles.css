@@ -54,7 +54,8 @@ p {
 
 .container-header {
 display: flex;
-border: 1px solid #ECECEC;
+border-bottom: 1px solid #ECECEC;
+
 }
 
 .logo {
@@ -232,6 +233,7 @@ margin-left: 50px;
            background-color: var(--brend-color);
           }
 
+
               .what-we-do .title {
                 font-weight: 700;
                 font-size: 36px;
@@ -283,6 +285,12 @@ margin-left: 50px;
     display: flex;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .team-list .team-list-men {
     margin-right: 30px;
 }
@@ -302,7 +310,6 @@ margin-left: 50px;
 .profi-name {
     display: block;
     padding-top: 30px;
-    padding-bottom: 30px;
     background: var(--brend-color);
     border-radius: 0px 0px 4px 4px;
     }
@@ -322,19 +329,7 @@ margin-left: 50px;
     padding: 6px 22px;
   }
 
-.portfolio .button:hover,
-.portfolio .button:focus {
-    display: inline-block;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    color: var(--brend-color);
-   
-    background-color: var(--accent-color);
-   
-  }
+
 
 .hero .button {
     display: inline-block;
@@ -350,6 +345,8 @@ margin-left: 50px;
     color: var(--brend-color);
     background-color: var(--accent-color);
     vertical-align: middle;
+    border: none;
+    border-radius: 4px;
 }
 
 .hero .button:hover,
@@ -358,18 +355,36 @@ margin-left: 50px;
     color: var(--brend-color);
     background: #188CE8;
     border-radius: 4px;
+    
+}
+
+.portfolio .button {
+    border: none;
+    border-radius: 4px;
+}
+
+.portfolio .button:hover,
+.portfolio .button:focus {
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--brend-color);
+    border: none;
+    background-color: var(--accent-color);
+
 }
 
 /* Footer */
 .footer {
-background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
 }
  /* логотип */
 
-.container-footer {
-   padding-top: 60px; 
-   padding-bottom: 60px;
-}
 
  .footer .logo {
     display: inline-block;
@@ -450,27 +465,32 @@ padding-bottom: 9px;
         padding: 0px;
         text-decoration: none;
 }
+
+/* Button-filtre */
+
 .filters {
     display: flex;
     justify-content: center;
     padding-bottom: 34px;
-}
+   }
 
 .filters .filters-button {
-    margin-right: 30px;
+    margin-right: 8px;
 }
 
 .filters .filters-button:last-child {
     margin-right: 0;
 }
+          /* CARDS */
 
 .card-set {
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 24px;
     border:1px solid #EEEEEE;
-
-}
+    border-width: 0px 1px 1px 1px;
+    }
 
 .card {
     display: flex;
@@ -479,9 +499,9 @@ padding-bottom: 9px;
     gap: 30px;        
  }
 
+ 
  .card .item {
-    
-    flex-basis: calc((100% - 60px) / 3);   
+        flex-basis: calc((100% - 60px) / 3);   
 }
 
  .card .item:nth-last-child(-n+3) {
